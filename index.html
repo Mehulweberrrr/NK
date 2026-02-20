@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="तेज़ और भरोसेमंद 2W & 4W Driving License Service by N.K. Singh. ऑनलाइन अप्लाई करें, रिन्यू करें।">
+    <title>2W & 4W Driving License | N.K. Singh</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ================= Trending 2026 Variables ================= */
+        :root {
+            --primary: #2563eb; 
+            --primary-hover: #1d4ed8;
+            --secondary: #ffaa00; 
+            --success: #10b981; 
+            --danger: #ef4444; 
+            --dark: #0f172a; 
+            --light: #f8fafc; 
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.08);
+            --bento-radius: 24px;
+        }
+
+        /* Reset & Global Fixes for 100% Responsiveness */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        html, body { 
+            scroll-behavior: smooth; 
+            overflow-x: hidden; /* Stops left-right scroll on mobile */
+            width: 100%; 
+            max-width: 100vw;
+        }
+        
+        body { 
+            color: var(--text-main); 
+            background-color: #f0fdf4;
+            background-image: 
+                radial-gradient(at 40% 20%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(37, 99, 235, 0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(255, 170, 0, 0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        img, video { max-width: 100%; height: auto; }
+
+        /* ================= Typography & Helpers ================= */
+        .text-primary { color: var(--primary); }
+        .text-success { color: var(--success); }
+        .text-danger { color: var(--danger); }
+        .text-secondary { color: var(--secondary); }
+        .text-center { text-align: center; }
+        
+        /* Auto-scaling section titles */
+        .section-title {
+            text-align: center; 
+            font-size: clamp(2rem, 4vw, 2.8rem); 
+            font-weight: 800;
+            margin-bottom: 3rem; color: var(--dark);
+            line-height: 1.3;
+        }
+        .section-title span { color: var(--primary); }
+        
+        /* Container scaling */
+        .container { 
+            width: 100%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 6rem 1.5rem; 
+        }
+
+        /* ================= Scrolling Marquee ================= */
+        .ticker-wrap {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background: linear-gradient(90deg, #ef4444, #2563eb);
+            color: #fff; padding: 8px 0; overflow: hidden;
+            z-index: 1002; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .ticker { display: flex; width: max-content; animation: tickerScroll 20s linear infinite; }
+        .ticker:hover { animation-play-state: paused; }
+        .ticker-item { display: flex; gap: 2rem; padding-right: 2rem; }
+        .ticker-item span { font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+        @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* ================= Bento Box Cards ================= */
+        .bento-card {
+            background: var(--glass-bg); backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border); border-radius: var(--bento-radius);
+            box-shadow: var(--glass-shadow); padding: 2rem;
+            transition: all 0.4s ease; position: relative; overflow: hidden;
+            height: 100%;
+        }
+        .bento-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); }
+
+        /* ================= Buttons ================= */
+        .btn-modern {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 12px 24px; font-size: 1.05rem; font-weight: 700;
+            text-decoration: none; border-radius: 100px; border: none;
+            cursor: pointer; transition: all 0.2s ease; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            width: auto;
+        }
+        .btn-primary { background: linear-gradient(to bottom, #3b82f6, #1d4ed8); color: #fff; box-shadow: 0 5px 0 #1e3a8a, 0 10px 20px rgba(37, 99, 235, 0.3); }
+        .btn-primary:active { transform: translateY(5px); box-shadow: 0 0px 0 #1e3a8a; }
+        
+        .btn-whatsapp { background: linear-gradient(to bottom, #22c55e, #15803d); color: #fff; box-shadow: 0 5px 0 #14532d, 0 10px 20px rgba(22, 163, 74, 0.3); }
+        .btn-whatsapp:active { transform: translateY(5px); box-shadow: 0 0px 0 #14532d; }
+        
+        .btn-yellow { background: linear-gradient(to bottom, #fbbf24, #d97706); color: #fff; box-shadow: 0 5px 0 #b45309, 0 10px 20px rgba(217, 119, 6, 0.3); }
+        .btn-yellow:active { transform: translateY(5px); box-shadow: 0 0px 0 #b45309; }
+
+        .btn-outline { background: #fff; color: var(--danger); border: 2px solid var(--danger); text-shadow: none; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1); }
+        .btn-outline:hover { background: var(--danger); color: #fff; }
+
+        .pulse-effect { animation: softPulse 2s infinite; }
+        @keyframes softPulse { 0% { box-shadow: 0 5px 0 #14532d, 0 0 0 0 rgba(34, 197, 94, 0.4); } 70% { box-shadow: 0 5px 0 #14532d, 0 0 0 15px rgba(34, 197, 94, 0); } 100% { box-shadow: 0 5px 0 #14532d, 0 0 0 0 rgba(34, 197, 94, 0); } }
+
+        /* ================= Navbar ================= */
+        header {
+            position: fixed; top: 45px; left: 50%; transform: translateX(-50%); width: 95%; max-width: 1200px;
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 100px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); z-index: 1000; transition: 0.3s; padding: 0.5rem 1.5rem;
+        }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo { font-size: 1.5rem; font-weight: 900; color: var(--dark); display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--danger); }
+        .logo i { color: var(--primary); font-size: 1.8rem; }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+        .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 700; transition: 0.3s; font-size: 0.95rem; text-transform: uppercase;}
+        .nav-links a:hover { color: var(--danger); }
+        .mobile-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); }
+
+        /* ================= Hero Section ================= */
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 140px 1.5rem 60px; position: relative; width: 100%; }
+        .hero-content { text-align: center; width: 100%; max-width: 900px; z-index: 2; }
+        .badge {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 8px 16px; background: linear-gradient(90deg, #ef4444, #dc2626);
+            color: #fff; border-radius: 100px; font-weight: 800; font-size: clamp(0.8rem, 2vw, 1rem); 
+            margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4); text-transform: uppercase;
+        }
+        /* Fluid Typography for Hero Heading - Scales perfectly on all devices */
+        .hero h1 { 
+            font-size: clamp(2rem, 6vw, 4.5rem); 
+            color: var(--dark); font-weight: 900; margin-bottom: 1rem; line-height: 1.15; text-transform: uppercase; 
+        }
+        .hero h1 .highlight-yellow { color: var(--secondary); text-shadow: 2px 2px 0 #b45309, 4px 4px 10px rgba(0,0,0,0.2); }
+        .hero h1 .highlight-red { color: var(--danger); text-shadow: 2px 2px 0 #991b1b, 4px 4px 10px rgba(0,0,0,0.2); }
+        .hero p { font-size: clamp(1rem, 3vw, 1.3rem); color: var(--text-main); margin-bottom: 2.5rem; font-weight: 600; padding: 0 10px; }
+        .hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; width: 100%; }
+
+        /* ================= Stats Grid ================= */
+        .stats-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 1.5rem; margin-top: -3rem; position: relative; z-index: 10; 
+        }
+        .stat-box { text-align: center; padding: 2rem; border-radius: var(--bento-radius); background: #fff; box-shadow: var(--glass-shadow); border: 2px solid #e2e8f0; }
+        .stat-box i { font-size: 2.5rem; color: var(--danger); margin-bottom: 1rem; }
+        .stat-box h3 { font-size: 2.5rem; font-weight: 900; color: var(--dark); }
+        .stat-box p { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.9rem;}
+
+        /* ================= Services Grid ================= */
+        .bento-services { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 280px prevents overflow on old phones */
+            gap: 1.5rem; 
+        }
+        .service-icon-wrap { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 1.5rem; background: rgba(37, 99, 235, 0.1); color: var(--primary); }
+        .bento-card.yellow-tint:hover .service-icon-wrap { background: rgba(255, 170, 0, 0.1); color: var(--secondary); }
+        .bento-card.green-tint:hover .service-icon-wrap { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+        .bento-card h3 { font-size: 1.3rem; color: var(--dark); margin-bottom: 0.8rem; font-weight: 800; }
+        .bento-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; font-weight: 500;}
+
+        /* ================= Process Stepper ================= */
+        .process-container { background: linear-gradient(135deg, var(--dark), #1e293b); border-radius: 32px; padding: 4rem 2rem; color: #fff; box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3); border: 4px solid #334155; width: 100%;}
+        .process-container .section-title { color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+        .stepper-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2.5rem; position: relative; }
+        .step-item { text-align: center; position: relative; z-index: 2; }
+        .step-circle { width: 70px; height: 70px; background: rgba(255,255,255,0.1); border: 2px solid var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 1.5rem; color: var(--secondary); backdrop-filter: blur(10px); transition: 0.3s; box-shadow: 0 0 15px rgba(255, 170, 0, 0.4); }
+        .step-item:hover .step-circle { background: var(--secondary); color: var(--dark); transform: scale(1.1) rotate(10deg); }
+        .step-item h4 { font-weight: 700; font-size: 1.1rem; }
+
+        /* ================= Testimonials ================= */
+        .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .testi-card { background: #fff; padding: 2rem; border-radius: var(--bento-radius); box-shadow: var(--glass-shadow); border: 1px solid #e2e8f0; height: 100%;}
+        .testi-card .stars { color: var(--secondary); margin-bottom: 1rem; font-size: 1.1rem; }
+        .testi-card p { color: var(--text-main); font-style: italic; margin-bottom: 1.5rem; font-weight: 500; font-size: 0.95rem; line-height: 1.6;}
+        .testi-card h4 { color: var(--primary); font-weight: 800; font-size: 1.1rem;}
+        .testi-card span { color: var(--text-muted); font-size: 0.85rem; }
+
+        /* ================= Form & Status Split ================= */
+        .split-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; width: 100%; }
+        .modern-input { width: 100%; padding: 15px; border: 2px solid #cbd5e1; border-radius: 12px; font-size: 1rem; font-weight: 500; outline: none; transition: 0.3s; background: #fff; margin-bottom: 1rem; }
+        .modern-input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1); }
+        
+        .doc-list { list-style: none; margin-bottom: 2rem; }
+        .doc-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 1rem; font-weight: 600; color: var(--text-main); font-size: 0.95rem; line-height: 1.4;}
+        .doc-list i { color: #fff; background: var(--success); padding: 5px; border-radius: 50%; font-size: 0.7rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); margin-top: 3px;}
+        
+        .status-result { margin-top: 1rem; padding: 16px; border-radius: 12px; font-weight: 700; display: none; font-size: 0.95rem;}
+        .status-result.show { display: block; animation: slideUpFade 0.4s ease; }
+        .status-success-bg { background: #dcfce7; color: #166534; border: 2px solid #22c55e; }
+
+        /* ================= FAQ ================= */
+        .faq-item { background: #fff; border-radius: 16px; margin-bottom: 1rem; border: 1px solid #e2e8f0; overflow: hidden; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.02); width: 100%;}
+        .faq-header { padding: 1.2rem 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; color: var(--dark); font-size: clamp(0.95rem, 3vw, 1.1rem); line-height: 1.4;}
+        .faq-header i { color: var(--primary); transition: transform 0.3s; flex-shrink: 0; margin-left: 10px;}
+        .faq-header.active i { transform: rotate(180deg); }
+        .faq-body { max-height: 0; overflow: hidden; padding: 0 1.5rem; color: var(--text-muted); font-weight: 500; font-size: 0.95rem; line-height: 1.6; transition: max-height 0.3s ease-out, padding 0.3s ease; }
+        .faq-body.active { padding-bottom: 1.5rem; max-height: 500px; }
+
+        /* ================= Footer ================= */
+        footer { background: #fff; padding: 4rem 1.5rem 2rem; border-top: 2px solid #e2e8f0; margin-top: 4rem; width: 100%;}
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; }
+        .footer-col h3 { font-size: 1.2rem; color: var(--dark); margin-bottom: 1.5rem; font-weight: 800; text-transform: uppercase;}
+        .footer-col p, .footer-col a { color: var(--text-muted); font-weight: 600; text-decoration: none; line-height: 1.8; transition: 0.2s; font-size: 0.95rem;}
+        .footer-col a:hover { color: var(--danger); }
+        .social-row { display: flex; gap: 1rem; margin-top: 1rem; }
+        .social-icon { width: 45px; height: 45px; border-radius: 50%; background: var(--light); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 1.2rem; transition: 0.3s; border: 1px solid #e2e8f0;}
+        .social-icon:hover { background: var(--primary); color: #fff; transform: translateY(-3px); border-color: var(--primary);}
+        .copyright { text-align: center; color: var(--dark); margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e2e8f0; font-size: 1rem; font-weight: 800; }
+
+        /* ================= PC Floating Action Buttons ================= */
+        .fab-container { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 999; }
+        .fab { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.3); transition: 0.3s; border: 3px solid #fff;}
+        .fab-whatsapp { background: linear-gradient(to bottom, #22c55e, #15803d); }
+        .fab:hover { transform: translateY(-5px) scale(1.1); }
+
+        /* ================= Animations ================= */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        @keyframes slideUpFade { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+
+        /* ================= 🔥 PERFECT MOBILE RESPONSIVENESS 🔥 ================= */
+        @media (max-width: 992px) {
+            .split-grid { grid-template-columns: 1fr; } /* Stacks forms on tablets */
+        }
+        
+        @media (max-width: 768px) {
+            /* Header Adjustments for Mobile */
+            header { 
+                width: 100%; top: 34px; border-radius: 0; padding: 1rem; 
+                border-left: none; border-right: none; border-top: none; 
+            }
+            .nav-links {
+                position: absolute; top: 100%; left: 0; width: 100%; background: #fff;
+                flex-direction: column; text-align: center; padding: 1.5rem 0; gap: 1.5rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: none; border-bottom: 3px solid var(--danger);
+            }
+            .nav-links.active { display: flex; animation: slideUpFade 0.3s ease; }
+            .nav-cta { display: none; }
+            .mobile-toggle { display: block; }
+            
+            /* Spacing adjustments for mobile */
+            .hero { padding-top: 130px; padding-bottom: 40px; }
+            .container { padding: 4rem 1.2rem; }
+            .bento-card { padding: 1.5rem; }
+            
+            /* Buttons 100% width on Mobile */
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .btn-modern { width: 100%; }
+            
+            /* Grid fixes for mobile */
+            .stats-grid { grid-template-columns: 1fr; margin-top: 2rem; }
+            .process-container { padding: 3rem 1.5rem; border-radius: 20px; }
+            .stepper-grid { gap: 2rem; }
+            .split-grid { grid-template-columns: 1fr; gap: 1.5rem;}
+            
+            /* Sticky Bottom Action Bar Setup */
+            .fab-container { display: none; } /* Hide PC button */
+            body { padding-bottom: 75px; } /* Prevent footer from hiding behind bar */
+            
+            .mobile-bottom-bar {
+                position: fixed; bottom: 0; left: 0; width: 100%; background: #fff;
+                display: flex; box-shadow: 0 -5px 20px rgba(0,0,0,0.2); z-index: 1000;
+                padding: 10px; gap: 10px; border-top-left-radius: 15px; border-top-right-radius: 15px;
+                border-top: 1px solid #e2e8f0;
+            }
+            .mobile-bottom-bar a { 
+                flex: 1; text-align: center; padding: 12px; border-radius: 10px; 
+                font-weight: 800; text-decoration: none; color: #fff; 
+                display: flex; justify-content: center; align-items: center; gap: 8px; 
+                font-size: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            }
+            .btn-mob-call { background: linear-gradient(to bottom, #3b82f6, #1d4ed8); box-shadow: 0 4px 0 #1e3a8a;}
+            .btn-mob-call:active { transform: translateY(3px); box-shadow: 0 0px 0 #1e3a8a;}
+            .btn-mob-wa { background: linear-gradient(to bottom, #22c55e, #15803d); box-shadow: 0 4px 0 #14532d;}
+            .btn-mob-wa:active { transform: translateY(3px); box-shadow: 0 0px 0 #14532d;}
+        }
+
+        /* Support for very small phones (like iPhone SE - 320px) */
+        @media (max-width: 380px) {
+            .hero h1 { font-size: 2rem; }
+            .hero h1 .highlight-yellow { font-size: 2.2rem; }
+            .btn-modern { font-size: 0.95rem; padding: 10px 20px;}
+            .mobile-bottom-bar a { font-size: 0.9rem; padding: 10px; }
+            .bento-services { grid-template-columns: 1fr; }
+        }
+        
+        @media (min-width: 769px) { .mobile-bottom-bar { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">
+                <span>🔥 100% पक्का और असली काम</span>
+                <span>🛡️ RTO से मान्यता प्राप्त</span>
+                <span>🏍️ 2W और 4W ड्राइविंग लाइसेंस</span>
+                <span>🏠 घर बैठे डोरस्टेप सर्विस</span>
+                <span>⚡ फ़ास्ट प्रोसेसिंग और जल्दी डिलीवरी</span>
+            </div>
+            <div aria-hidden="true" class="ticker-item">
+                <span>🔥 100% पक्का और असली काम</span>
+                <span>🛡️ RTO से मान्यता प्राप्त</span>
+                <span>🏍️ 2W और 4W ड्राइविंग लाइसेंस</span>
+                <span>🏠 घर बैठे डोरस्टेप सर्विस</span>
+                <span>⚡ फ़ास्ट प्रोसेसिंग और जल्दी डिलीवरी</span>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-id-card"></i> NK <span>Services</span>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#services">सेवाएं</a></li>
+                    <li><a href="#process">प्रक्रिया</a></li>
+                    <li><a href="#apply">अप्लाई करें</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="tel:+919199517156" class="btn-modern btn-outline"><i class="fa-solid fa-phone"></i> 9199517156</a>
+            </div>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal active">
+            <div class="badge"><i class="fa-solid fa-shield-halved"></i> Govt. Of India Valid DL</div>
+            <h1>
+                <span class="highlight-yellow">2W & 4W</span><br>
+                DRIVING LICENSE<br>
+                <span class="highlight-red">बनाने के लिए CONTACT करें!</span>
+            </h1>
+            <p>लर्निंग लाइसेंस, परमानेंट DL, रिन्यूअल या डुप्लीकेट लाइसेंस प्राप्त करें। सबसे भरोसेमंद और फास्ट सर्विस।</p>
+            <div class="hero-buttons">
+                <a href="tel:+919199517156" class="btn-modern btn-primary"><i class="fa-solid fa-phone-volume"></i> CALL NOW!</a>
+                <a href="https://wa.me/919199517156" class="btn-modern btn-whatsapp pulse-effect"><i class="fa-brands fa-whatsapp"></i> व्हाट्सएप करें</a>
+                <a href="#apply" class="btn-modern btn-yellow"><i class="fa-solid fa-hand-pointer"></i> APPLY NOW!</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-grid container reveal">
+        <div class="stat-box">
+            <i class="fa-solid fa-star"></i>
+            <h3 class="counter" data-target="10">0</h3>
+            <p>वर्षों का अनुभव</p>
+        </div>
+        <div class="stat-box">
+            <i class="fa-solid fa-users"></i>
+            <h3 class="counter" data-target="15000">0</h3>
+            <p>संतुष्ट ग्राहक</p>
+        </div>
+        <div class="stat-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>100%</h3>
+            <p>डोरस्टेप डिलीवरी</p>
+        </div>
+    </div>
+
+    <section id="services" class="container reveal">
+        <h2 class="section-title">हमारी <span>प्रमुख सेवाएं</span></h2>
+        <div class="bento-services">
+            <div class="bento-card">
+                <div class="service-icon-wrap"><i class="fa-solid fa-car-side"></i></div>
+                <h3>लर्निंग लाइसेंस</h3>
+                <p>बिना RTO की लाइन में लगे अपना लर्निंग लाइसेंस आसानी से बनवाएं। नए ड्राइवरों के लिए पहली सीढ़ी।</p>
+            </div>
+            <div class="bento-card green-tint">
+                <div class="service-icon-wrap"><i class="fa-solid fa-id-badge"></i></div>
+                <h3>परमानेंट DL</h3>
+                <p>लर्निंग के बाद पक्का ड्राइविंग लाइसेंस। ड्राइविंग टेस्ट पास करने में हमारी पूरी मदद और मार्गदर्शन।</p>
+            </div>
+            <div class="bento-card yellow-tint">
+                <div class="service-icon-wrap"><i class="fa-solid fa-rotate"></i></div>
+                <h3>DL रिन्यूअल</h3>
+                <p>लाइसेंस एक्सपायर हो गया है? बिना टेंशन के हमसे रिन्यू करवाएं, सीधे आपके घर डिलीवर होगा।</p>
+            </div>
+            <div class="bento-card">
+                <div class="service-icon-wrap"><i class="fa-solid fa-copy"></i></div>
+                <h3>डुप्लीकेट लाइसेंस</h3>
+                <p>ओरिजिनल कार्ड खो गया या टूट गया है? आधिकारिक तौर पर डुप्लीकेट कॉपी प्राप्त करें।</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="container reveal">
+        <div class="process-container">
+            <h2 class="section-title" style="color: white;">काम कैसे होता है?</h2>
+            <div class="stepper-grid">
+                <div class="step-item">
+                    <div class="step-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h4>1. व्हाट्सएप करें</h4>
+                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 5px;">9199517156 पर मैसेज करें</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle"><i class="fa-solid fa-file-arrow-up"></i></div>
+                    <h4>2. डॉक्यूमेंट दें</h4>
+                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 5px;">आधार, फोटो आदि भेजें</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h4>3. स्लॉट बुकिंग</h4>
+                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 5px;">RTO अपॉइंटमेंट फिक्स होगा</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h4>4. घर पर डिलीवरी</h4>
+                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 5px;">DL बनकर घर आएगा</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <h2 class="section-title">ग्राहकों का <span>भरोसा</span></h2>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"एन.के. सिंह जी ने बहुत बढ़िया काम किया। बिना परेशानी और RTO के चक्कर काटे मेरा लाइसेंस घर आ गया।"</p>
+                <h4>रमेश कुमार</h4>
+                <span>संतुष्ट ग्राहक</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <p>"इन्होने मेरा पूरा फॉर्म भरा और बहुत ही कम फीस में मेरा 4-व्हीलर लाइसेंस बनवा दिया। बेस्ट सर्विस!"</p>
+                <h4>सुनीता देवी</h4>
+                <span>संतुष्ट ग्राहक</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"लाइसेंस रिन्यूअल बहुत जल्दी हो गया। इनका काम बहुत ही फ़ास्ट है। कोई एक्स्ट्रा चार्ज नहीं लिया।"</p>
+                <h4>अमित शर्मा</h4>
+                <span>संतुष्ट ग्राहक</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="container reveal">
+        <div class="split-grid">
+            
+            <div class="bento-card">
+                <h3 style="font-size: 1.5rem; color: var(--dark); margin-bottom: 1rem; font-weight: 800;"><i class="fa-solid fa-paper-plane text-primary"></i> अभी रिक्वेस्ट भेजें</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 600; font-size: 0.95rem;">अपनी डिटेल भरें। हम आपको व्हाट्सएप पर फीस और पूरी जानकारी बताएंगे।</p>
+                
+                <form id="wa-form">
+                    <input type="text" id="user-name" class="modern-input" placeholder="आपका पूरा नाम" required>
+                    <input type="tel" id="user-phone" class="modern-input" placeholder="मोबाइल / व्हाट्सएप नंबर" required>
+                    <select id="user-service" class="modern-input" required>
+                        <option value="" disabled selected>क्या सर्विस चाहिए?</option>
+                        <option value="लर्निंग लाइसेंस">लर्निंग लाइसेंस</option>
+                        <option value="परमानेंट लाइसेंस">परमानेंट लाइसेंस</option>
+                        <option value="DL रिन्यूअल">DL रिन्यूअल</option>
+                        <option value="अन्य काम">अन्य काम</option>
+                    </select>
+                    <button type="submit" class="btn-modern btn-yellow" style="width: 100%;"><i class="fa-brands fa-whatsapp"></i> व्हाट्सएप पर भेजें</button>
+                </form>
+            </div>
+
+            <div class="bento-card">
+                <h3 style="font-size: 1.5rem; color: var(--dark); margin-bottom: 1rem; font-weight: 800;"><i class="fa-solid fa-folder-open text-primary"></i> ज़रूरी डॉक्यूमेंट्स</h3>
+                <ul class="doc-list">
+                    <li><i class="fa-solid fa-check"></i> आधार कार्ड (मोबाइल से लिंक)</li>
+                    <li><i class="fa-solid fa-check"></i> पैन कार्ड / वोटर आईडी</li>
+                    <li><i class="fa-solid fa-check"></i> 4 पासपोर्ट साइज फोटो</li>
+                    <li><i class="fa-solid fa-check"></i> ब्लड ग्रुप की रिपोर्ट</li>
+                </ul>
+
+                <hr style="border-color: rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
+
+                <div id="status">
+                    <h3 style="font-size: 1.3rem; color: var(--dark); margin-bottom: 1rem; font-weight: 800;"><i class="fa-solid fa-magnifying-glass text-primary"></i> स्टेटस चेक</h3>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="app-number" class="modern-input" style="margin-bottom:0;" placeholder="एप्लीकेशन नं." required>
+                        <button type="button" id="check-btn" class="btn-modern btn-primary" style="padding: 0 20px;">चेक</button>
+                    </div>
+                    <div id="status-msg" class="status-result status-success-bg">
+                        <i class="fa-solid fa-circle-check"></i> <b>अप्रूव्ड!</b> आपका कार्ड प्रिंट होकर भेज दिया गया है।
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <h2 class="section-title">अक्सर पूछे जाने वाले <span>सवाल</span></h2>
+        <div style="max-width: 800px; margin: 0 auto; width: 100%;">
+            <div class="faq-item">
+                <div class="faq-header">ड्राइविंग लाइसेंस बनने में कितने दिन लगते हैं? <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-body">लर्निंग लाइसेंस 1-2 दिन में बन जाता है। परमानेंट लाइसेंस, टेस्ट पास करने के 10-15 दिन बाद स्पीड पोस्ट से आता है।</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">क्या मुझे RTO ऑफिस जाना पड़ेगा? <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-body">लर्निंग के लिए नहीं। लेकिन परमानेंट लाइसेंस के टेस्ट के लिए एक बार जाना होगा, जहाँ हमारी टीम आपकी मदद करेगी।</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header">क्या यह काम 100% असली है? <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-body">हाँ, बिल्कुल। आपको भारत सरकार द्वारा मान्यता प्राप्त असली DL ही मिलेगा जिसे आप ऑनलाइन चेक कर सकते हैं।</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-id-card text-primary"></i> NK Services</h3>
+                <p>ड्राइविंग लाइसेंस और RTO से जुड़े सभी कामों के लिए आपका भरोसेमंद और तेज़ साथी।</p>
+                <div class="social-row">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>त्वरित लिंक्स</h3>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#home">होम पेज</a>
+                    <a href="#services">हमारी सेवाएं</a>
+                    <a href="#apply">ऑनलाइन फॉर्म भरें</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>संपर्क करें</h3>
+                <p><i class="fa-solid fa-location-dot"></i> भारत (India)</p>
+                <p style="margin-top: 10px;"><i class="fa-solid fa-phone"></i> +91 9199517156</p>
+            </div>
+        </div>
+        <p class="copyright">
+            By N.K.Singh | Contact: 9199517156<br>
+            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">&copy; 2026 Driving License Services. सभी अधिकार सुरक्षित।</span>
+        </p>
+    </footer>
+
+    <div class="fab-container">
+        <a href="https://wa.me/919199517156" class="fab fab-whatsapp pulse-effect"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <div class="mobile-bottom-bar">
+        <a href="tel:+919199517156" class="btn-mob-call"><i class="fa-solid fa-phone"></i> CALL NOW</a>
+        <a href="https://wa.me/919199517156" class="btn-mob-wa"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Mobile Menu
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = mobileToggle.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars-staggered');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars-staggered');
+                }
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileToggle.querySelector('i').classList.replace('fa-xmark', 'fa-bars-staggered');
+                });
+            });
+
+            // FAQ Accordion
+            const faqHeaders = document.querySelectorAll('.faq-header');
+            faqHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const body = header.nextElementSibling;
+                    const isActive = header.classList.contains('active');
+                    
+                    document.querySelectorAll('.faq-header').forEach(h => h.classList.remove('active'));
+                    document.querySelectorAll('.faq-body').forEach(b => b.classList.remove('active'));
+                    
+                    if (!isActive) {
+                        header.classList.add('active');
+                        body.classList.add('active');
+                    }
+                });
+            });
+
+            // Animations & Counters
+            const reveals = document.querySelectorAll('.reveal');
+            let counted = false;
+
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                reveals.forEach(reveal => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 50) {
+                        reveal.classList.add('active');
+                        if(reveal.classList.contains('stats-grid') && !counted) {
+                            runCounters();
+                            counted = true;
+                        }
+                    }
+                });
+            };
+            window.addEventListener('scroll', revealOnScroll);
+            setTimeout(revealOnScroll, 300);
+
+            function runCounters() {
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    counter.innerText = '0';
+                    const updateCounter = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const c = +counter.innerText;
+                        const increment = target / 40; 
+                        if (c < target) {
+                            counter.innerText = `${Math.ceil(c + increment)}`;
+                            setTimeout(updateCounter, 40);
+                        } else {
+                            counter.innerText = target + '+';
+                        }
+                    };
+                    updateCounter();
+                });
+            }
+
+            // Status Check Demo
+            const checkBtn = document.getElementById('check-btn');
+            const appInput = document.getElementById('app-number');
+            const statusMsg = document.getElementById('status-msg');
+
+            checkBtn.addEventListener('click', () => {
+                if(appInput.value.trim() === '') {
+                    alert('कृपया एप्लीकेशन नंबर डालें');
+                    return;
+                }
+                checkBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+                setTimeout(() => {
+                    statusMsg.classList.add('show');
+                    checkBtn.innerHTML = 'चेक';
+                }, 1000);
+            });
+
+            // WhatsApp Form
+            const waForm = document.getElementById('wa-form');
+            waForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('user-name').value;
+                const phone = document.getElementById('user-phone').value;
+                const service = document.getElementById('user-service').value;
+                
+                const myWhatsAppNumber = "919199517156"; 
+                
+                const message = `नमस्ते N.K. सिंह जी, मेरा नाम ${name} है। \nमेरा मोबाइल नंबर: ${phone} है। \nमुझे *${service}* बनवाना है। कृपया मेरी मदद करें।`;
+                
+                const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+                waForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
